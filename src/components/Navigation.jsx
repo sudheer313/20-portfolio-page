@@ -1,14 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
+import {Link} from "react-router-dom";
+
+
 
 const Navigation = () => {
-  const [tabs, setTabs] = useState(["About", "Portfolio", "Contact", "Resume"]);
+  const navigationTitles = ["About", "Portfolio", "Contact", "Resume"];
+
   return (
-    <div>
-      <ul>
-        {tabs.map((tab) => (
-          <li key={tab}>{tab}</li>
-        ))}
+    <div className={`links-container`} >
+      <ul className="links">
+        {
+          navigationTitles.map((navTitle)=>(
+            <li key={navTitle}>
+              <Link to= {`${navTitle}`} className="link"></Link>
+              {navTitle}
+            </li>
+          ))
+        }
       </ul>
+      
     </div>
   );
 };
