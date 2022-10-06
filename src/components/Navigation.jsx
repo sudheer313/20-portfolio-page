@@ -1,24 +1,25 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
-
-
-const Navigation = () => {
+const Navigation = ({ navState, setNavState }) => {
   const navigationTitles = ["About", "Portfolio", "Contact", "Resume"];
 
   return (
-    <div className={`links-container`} >
+    <div
+      className={`${
+        navState ? "links-container nav-visible" : "links-container"
+      }`}
+    >
       <ul className="links">
-        {
-          navigationTitles.map((navTitle)=>(
-            <li key={navTitle}>
-              <Link to= {`${navTitle}`} className="link"></Link>
-              {navTitle}
-            </li>
-          ))
-        }
+        {navigationTitles.map((navTitle) => (
+          <li key={navTitle} onClick={()=>setNavState((prev)=>false)}>
+            <Link to={`${navTitle}`} className="link">
+              {" "}
+              {navTitle}{" "}
+            </Link>
+          </li>
+        ))}
       </ul>
-      
     </div>
   );
 };

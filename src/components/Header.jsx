@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "./Navigation";
+import { MdClose } from "react-icons/md";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
   const [navState, setNavState] = useState(false);
@@ -14,7 +16,13 @@ const Header = () => {
             </Link>
           </div>
           <div className="toggle-container">
-            <div className="toggle"></div>
+            <div className="toggle">
+              {navState ? (
+                <MdClose onClick={() => setNavState(false)} />
+              ) : (
+                <GiHamburgerMenu onClick={() => setNavState(true)} />
+              )}
+            </div>
           </div>
         </div>
         <Navigation navState={navState} setNavState={setNavState} />

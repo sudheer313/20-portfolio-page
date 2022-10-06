@@ -1,30 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto',sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-nav{
-    display: flex;
-    align-items: center;
-     justify-content: space-between;
-    padding:1.5rem 4rem; 
-    color:white;
-    background: radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
-    
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 4rem;
+  color: white;
+  background: radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 25%
+  );
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold; 
-    text-decoration: none; 
-    color: inherit;
-    }
-    .links {
-        list-style-type: none;
-        display: flex;
-        gap: 2rem; 
-        }
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
+.links {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+}
+.toggle-container {
+  display: none;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  nav {
+    position: relative;
+    padding: 2rem;
+  }
+
+  .brand-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .toggle-container {
+    display: block;
+    z-index: 40;
+  }
+
+  .toggle {
+    z-index: 40;
+  }
+
+  .links-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+
+  .nav-visible {
+    visibility: visible;
+    width: 60vw;
+    height: 100vh;
+    background: radial-gradient(
+      circle at 3% 25%,
+      rgba(0, 40, 83, 1) 0%,
+      rgba(4, 12, 24, 1) 25%
+    );
+  }
+}
