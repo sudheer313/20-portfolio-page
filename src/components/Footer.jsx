@@ -1,17 +1,26 @@
 import React from "react";
-
-const styles = {
-  footer: {
-    color: "red",
-    background: "#3f51b5",
-    textAlign: "center",
-  },
-};
+import { GoMarkGithub } from "react-icons/go";
+import { AiFillLinkedin } from "react-icons/ai";
+import { SiTwitter } from "react-icons/si";
 
 function Footer() {
+  const handleGithubClick = (type) => {
+    if (type === "github") {
+      window.open("https://github.com/sudheer313", "_blank");
+    } else if (type === "linkdin") {
+      //add linkdin page
+      console.log("linkdin");
+    } else {
+      //add twitter page
+      console.log("twitter");
+    }
+  };
+
   return (
-    <div style={styles.footer}>
-      <h1 style={{ color: "white" }}>@SudheerKandula</h1>
+    <div className="footer">
+      <GoMarkGithub size={30} onClick={() => handleGithubClick("github")} />
+      <AiFillLinkedin size={30} onClick={() => handleGithubClick("linkdin")} />
+      <SiTwitter size={30} onClick={() => handleGithubClick("twitter")} />
     </div>
   );
 }
