@@ -41,7 +41,9 @@ const Contact = () => {
             onChange={(e) => setmessage((prev) => e.target.value)}
           ></textarea>
         </div>
-        <button type="submit"> </button>
+        <button input type="submit" onClick={handlecontactForm}>
+          Submit
+        </button>
       </form>
     </div>
   );

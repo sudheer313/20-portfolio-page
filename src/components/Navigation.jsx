@@ -2,7 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Navigation = ({ navState, setNavState }) => {
-  const navigationTitles = ["About", "Portfolio", "Contact", "Resume"];
+  const navigationTitles = [
+    "About",
+    "Portfolio",
+    "Skills",
+    "Contact",
+    "Resume",
+  ];
 
   return (
     <div
@@ -12,7 +18,7 @@ const Navigation = ({ navState, setNavState }) => {
     >
       <ul className="links">
         {navigationTitles.map((navTitle) => (
-          <li key={navTitle} onClick={()=>setNavState((prev)=>false)}>
+          <li key={navTitle} onClick={() => setNavState((prev) => false)}>
             <Link to={`${navTitle}`} className="link">
               {" "}
               {navTitle}{" "}

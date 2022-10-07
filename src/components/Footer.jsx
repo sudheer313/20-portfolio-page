@@ -1,7 +1,7 @@
 import React from "react";
 import { GoMarkGithub } from "react-icons/go";
 import { AiFillLinkedin } from "react-icons/ai";
-import { SiTwitter } from "react-icons/si";
+import { BsStackOverflow } from "react-icons/bs";
 
 function Footer() {
   const handleGithubClick = (type) => {
@@ -9,10 +9,13 @@ function Footer() {
       window.open("https://github.com/sudheer313", "_blank");
     } else if (type === "linkdin") {
       //add linkdin page
-      console.log("linkdin");
+      window.open("https://www.linkedin.com/in/sudheer-kandula/", "_blank");
     } else {
-      //add twitter page
-      console.log("twitter");
+      //add stack over flow page
+      window.open(
+        "http://stackoverflow.com/users/18934176/sudheer-kandulain.com/in/sudheer-kandula/",
+        "_blank"
+      );
     }
   };
 
@@ -20,7 +23,7 @@ function Footer() {
     <div className="footer">
       <GoMarkGithub size={30} onClick={() => handleGithubClick("github")} />
       <AiFillLinkedin size={30} onClick={() => handleGithubClick("linkdin")} />
-      <SiTwitter size={30} onClick={() => handleGithubClick("twitter")} />
+      <BsStackOverflow size={30} onClick={() => handleGithubClick("twitter")} />
     </div>
   );
 }
