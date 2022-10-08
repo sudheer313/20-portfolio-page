@@ -1,9 +1,44 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
+import resume from "../assets/Resume.pdf";
 
 const Resume = () => {
   return (
-    <div>Resume</div>
-  )
-}
+    <div className="resume">
+      <h1>Resume</h1>
+      <p>
+        Download my
+        <Link
+          to={resume}
+          target="_blank"
+          download
+          className="download-resume-btn"
+        >
+          resume
+        </Link>
+      </p>
+      <div className="skills">
+        <div className="frontend">
+          <span>front-end Proficiencies</span>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+          </ul>
+        </div>
+        <div className="backend">
+          <span>back-end Proficiencies</span>
+          <ul>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>MongoDB</li>
+            <li>MySql</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Resume
+export default Resume;

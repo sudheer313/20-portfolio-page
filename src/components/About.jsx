@@ -2,12 +2,12 @@ import React from "react";
 
 const About = () => {
   return (
-    <div>
+    <div className="about">
       <div className="img">
         <img
           src={require("../images/IMG_1211.jpg")}
-          alt="image not found"
-          width="30%"
+          alt=" not found"
+          width="100%"
         />
       </div>
 

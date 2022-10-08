@@ -11,6 +11,7 @@ const Contact = () => {
   };
   return (
     <div className="contact">
+      <h1>Contact</h1>
       <form className="contact-form" onSubmit={handlecontactForm}>
         <div className="name">
           <label htmlFor="name">Name:</label>
@@ -41,7 +42,12 @@ const Contact = () => {
             onChange={(e) => setmessage((prev) => e.target.value)}
           ></textarea>
         </div>
-        <button input type="submit" onClick={handlecontactForm}>
+        <button
+          className="contact-button"
+          input
+          type="submit"
+          onClick={handlecontactForm}
+        >
           Submit
         </button>
       </form>

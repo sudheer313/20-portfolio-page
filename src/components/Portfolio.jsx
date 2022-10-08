@@ -1,14 +1,9 @@
-import React from "react";
+import React from 'react'
 
-function Portfolio() {
-  const Projects = ["AFL", "Pizza Bar and Restaurent", "Social Netoworking"];
+const Portfolio = () => {
   return (
-    <div>
-      {Projects.map((list) => (
-        <ol>{list}</ol>
-      ))}
-    </div>
-  );
+    <div className='portfolio'>Portfolio</div>
+  )
 }
 
-export default Portfolio;
+export default Portfolio

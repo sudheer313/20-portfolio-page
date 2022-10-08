@@ -4,7 +4,7 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { BsStackOverflow } from "react-icons/bs";
 
 function Footer() {
-  const handleGithubClick = (type) => {
+  const handleSocialClick = (type) => {
     if (type === "github") {
       window.open("https://github.com/sudheer313", "_blank");
     } else if (type === "linkdin") {
@@ -21,9 +21,9 @@ function Footer() {
 
   return (
     <div className="footer">
-      <GoMarkGithub size={30} onClick={() => handleGithubClick("github")} />
-      <AiFillLinkedin size={30} onClick={() => handleGithubClick("linkdin")} />
-      <BsStackOverflow size={30} onClick={() => handleGithubClick("twitter")} />
+      <GoMarkGithub size={30} onClick={() => handleSocialClick("github")} />
+      <AiFillLinkedin size={30} onClick={() => handleSocialClick("linkdin")} />
+      <BsStackOverflow size={30} onClick={() => handleSocialClick("twitter")} />
     </div>
   );
 }
