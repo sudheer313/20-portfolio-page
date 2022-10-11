@@ -6,7 +6,7 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
-import Skills from "./components/Skills";
+
 function App() {
   return (
     <div className="App">
@@ -20,8 +20,7 @@ function App() {
             <Route path="About" element={<About />} />
             {/*http://localhost:3000/Portfolio */}
             <Route path="Portfolio" element={<Portfolio />} />
-            {/*http://localhost:3000/Skills */}
-            <Route path="Skills" element={<Skills />} />
+            
             {/*http://localhost:3000/Contact */}
             <Route path="Contact" element={<Contact />} />
             {/*http://localhost:3000/Resume */}
