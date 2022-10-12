@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/20-portfolio-page/static/css/main.bc6cd66f.css",
+    "main.js": "/20-portfolio-page/static/js/main.e4369472.js",
+    "static/media/pizza.png": "/20-portfolio-page/static/media/pizza.5740be47c908dc9b845d.png",
+    "static/media/IMG_1211.jpg": "/20-portfolio-page/static/media/IMG_1211.5c9b1b53cca7ab1b6def.jpg",
+    "static/media/afl.png": "/20-portfolio-page/static/media/afl.44a69548984e31d9693d.png",
+    "static/media/techi_blog.png": "/20-portfolio-page/static/media/techi_blog.125cbdb2900dbc4575d1.png",
+    "static/media/resume.pdf": "/20-portfolio-page/static/media/resume.d40f81e6e1d2703fae13.pdf",
+    "static/media/weather.png": "/20-portfolio-page/static/media/weather.8d47630df8dd835a2083.png",
+    "static/media/quiz.png": "/20-portfolio-page/static/media/quiz.1427c9828d25b648f160.png",
+    "static/media/workday.png": "/20-portfolio-page/static/media/workday.71b64255fb5e46fa5bda.png",
+    "index.html": "/20-portfolio-page/index.html",
+    "main.bc6cd66f.css.map": "/20-portfolio-page/static/css/main.bc6cd66f.css.map",
+    "main.e4369472.js.map": "/20-portfolio-page/static/js/main.e4369472.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc6cd66f.css",
+    "static/js/main.e4369472.js"
+  ]
+}
