@@ -1,13 +1,7 @@
 import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Navigate,
-  Redirect,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
@@ -21,18 +15,18 @@ function App() {
         <Routes>
           {/*http://localhost:3000/ */}
 
-          {/* <Route path="/"> */}
-          <Route index element={<Navigate to="About" />} />
-          {/*http://localhost:3000/About */}
-          <Route path="About" element={<About />} />
-          {/*http://localhost:3000/Portfolio */}
-          <Route path="Portfolio" element={<Portfolio />} />
+          <Route path="/">
+            <Route index element={<Navigate to="About" />} />
+            {/*http://localhost:3000/About */}
+            <Route path="About" element={<About />} />
+            {/*http://localhost:3000/Portfolio */}
+            <Route path="Portfolio" element={<Portfolio />} />
 
-          {/*http://localhost:3000/Contact */}
-          <Route path="Contact" element={<Contact />} />
-          {/*http://localhost:3000/Resume */}
-          <Route path="Resume" element={<Resume />} />
-          {/* </Route> */}
+            {/*http://localhost:3000/Contact */}
+            <Route path="Contact" element={<Contact />} />
+            {/*http://localhost:3000/Resume */}
+            <Route path="Resume" element={<Resume />} />
+          </Route>
         </Routes>
         <Footer />
       </BrowserRouter>
