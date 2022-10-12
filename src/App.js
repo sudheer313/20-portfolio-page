@@ -20,7 +20,7 @@ function App() {
             <Route path="About" element={<About />} />
             {/*http://localhost:3000/Portfolio */}
             <Route path="Portfolio" element={<Portfolio />} />
-            
+
             {/*http://localhost:3000/Contact */}
             <Route path="Contact" element={<Contact />} />
             {/*http://localhost:3000/Resume */}

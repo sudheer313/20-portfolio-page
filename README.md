@@ -30,19 +30,34 @@ The following images show how my React application is presented:
 ![Mobile View ](./src/images/mobile-view.png)<br>
 ![Mobile View ](./src/images/mobile-view1.png)<br>
 
-## deploymnet
+#Deployment
+
+- Deployed in git hub through my Github Account
+
+## Git hub repo
+
+sudheer313/20-portfolio-page
+
+## Link to github repo
+
+https://github.com/sudheer313/20-portfolio-page/settings/pages
+
+## Link to live site
+
+https://sudheer313.github.io/20-portfolio-page/
 
 ## credits
 
 askBCS </br>
+referred https://reactjs.org/ </br>
 
 ## What I learned
 
-This application helped me to understand how to create modeles in mongoose and create a connection to mongoose database create routes using express routes
+This application helped me to understand how to create basic react application and also to work on diffternt componets and also most importantatly using props, state and routes in this assignmnet.
 
 ## Challanges
 
-At start I was unable to understand MongoDB. I was unbale to models and understand basic strcuture. But after careful understanding of concepts and class activities helped me to congigure this app.
+At start I was unable to understand React . I was unbale to Props and state and understand basic strcuture. But after careful understanding of concepts and class activities helped me to congigure this React app.
 I am also thankful to BCS who helped me through the process when I was struck in the due process of execution.
 
 ## Author
