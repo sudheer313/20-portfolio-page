@@ -19,7 +19,7 @@ const Resume = () => {
       </p>
       <div className="skills">
         <div className="frontend">
-          <span>front-end Proficiencies</span>
+          <span>Front-end Proficiencies</span>
           <ul>
             <li>HTML</li>
             <li>CSS</li>
@@ -28,7 +28,7 @@ const Resume = () => {
           </ul>
         </div>
         <div className="backend">
-          <span>back-end Proficiencies</span>
+          <span>Back-end Proficiencies</span>
           <ul>
             <li>Node.js</li>
             <li>Express.js</li>

@@ -1,10 +1,11 @@
 import React from "react";
 import afl from "../images/afl.png";
 import pizza from "../images/pizza.png";
-import note from "../images/note.png";
+
 import quiz from "../images/quiz.png";
 import techi from "../images/techi_blog.png";
 import workday from "../images/workday.png";
+import weather from "../images/weather.png";
 import Project from "./Project";
 
 const projects = [
@@ -23,8 +24,26 @@ const projects = [
   {
     id: 3,
     title: "Code quiz",
-    project_image: techi,
+    project_image: quiz,
     github: "https://sudheer313.github.io/Code-Quiz/",
+  },
+  {
+    id: 4,
+    title: "Pizza and bar",
+    project_image: pizza,
+    github: "https://beerandpizza.herokuapp.com/",
+  },
+  {
+    id: 5,
+    title: "Weather Dashboard",
+    project_image: weather,
+    github: "https://sudheer313.github.io/Weather-Dashboard/",
+  },
+  {
+    id: 5,
+    title: "Workday scheduler",
+    project_image: workday,
+    github: "https://sudheer313.github.io/Work-Day-Scheduler/",
   },
 ];
 
