@@ -10,14 +10,15 @@ import Resume from "./components/Resume";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/20-portfolio-page/">
+      <BrowserRouter>
         <Header />
         <Routes>
           {/*http://localhost:3000/ */}
 
           <Route>
+            <Route index element={<Navigate to="About" />} />
             {/*http://localhost:3000/About */}
-            <Route path="/" element={<About />} />
+            <Route path="About" element={<About />} />
             {/*http://localhost:3000/Portfolio */}
             <Route path="Portfolio" element={<Portfolio />} />
 
