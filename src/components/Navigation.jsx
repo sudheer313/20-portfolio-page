@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Navigation = ({ navState, setNavState }) => {
-  const navigationTitles = ["About", "Portfolio", "Contact", "Resume"];
+  const navigationTitles = ["/", "Portfolio", "Contact", "Resume"];
 
   return (
     <div
